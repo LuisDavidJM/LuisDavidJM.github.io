@@ -1,0 +1,235 @@
+*{
+    font-family: 'DM Sans', sans-serif;
+    margin: 0px;
+    padding: 0px;
+    --color2: rgba(23,23,25,1);
+    --color3: #f9b53a;
+}
+
+.conteiner{
+    display: grid;
+    grid-gap: 0px;
+    grid-template-columns: 1fr;
+    grid-template-rows: 80px auto 150px;
+    grid-template-areas:
+        "header"
+        "main"
+        "footer" ;   
+}
+/* Header section */
+.header{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-areas: "logo options button";
+    background: var(--color2);
+    color: white;
+}
+a{
+    text-decoration: none;
+    color: white;
+}
+.header .logo{
+    margin: auto;
+    font-size: 25px;
+}
+
+.options{
+    margin: auto;
+}
+.button{
+    margin: auto;
+    padding: 15px 30px 15px 30px;
+    border-radius: 8px;
+    background: var(--color3);
+}
+.button:hover{
+    padding: 16px 31px 16px 31px;
+    font-size: 17px;
+}
+ .options ul, .options2 ul, .contact ul{
+     list-style: none;
+ }
+ .options ul li{
+    display: inline-block;
+    margin: 15px 15px 7px 15px;
+    padding-bottom: 6px;
+    border-bottom: rgba(0,0,0,0) 2px solid;
+ }
+ .options ul li:hover{
+    border-bottom: var(--color3) 2px solid; 
+ }  
+ /* Logo section */
+main .logo{
+    width: 100%;
+ }
+.main {
+    background: #3d3d47;
+ }
+/* Perfil section */
+.about-me{
+    
+     width: 73%;
+     padding: 20px;
+     margin: 50px auto;
+     display: grid;
+     grid-gap: 20px;
+     grid-template-columns: 1fr 2fr;
+     grid-template-rows: 1fr 2.5fr 1fr;
+     background: var(--color2);
+     border: #3d3d3d 2px solid;
+     border-radius: 10px;   
+     color: white;
+ }
+.about-me .yo{
+    grid-row: 1 / 4;
+    padding-right: 10px;
+}
+.about-me .yo img{
+    height: 100%;
+    width: 100%;
+    border-radius: 10px;
+}
+.about-me .acerca{
+    font-size: 30px;
+    margin-top: 10px;
+}
+.about-me .more{
+    margin: auto 0px;
+}
+.about-me .more a{
+    border: white 1px solid;
+    border-radius: 7px;
+    padding: 15px;
+}
+.about-me .more a:hover{
+    border: white 2px solid;
+    padding: 16px;
+}
+.about-me .information p{
+    padding-right: 60px;
+    line-height: 25px;
+}
+/* Abilities section */
+.main .my-abilities{
+    margin: 60px auto;
+    width: 50%;
+}
+.main .my-abilities h3{
+    text-align: center;
+    font-size: 30px;
+    color: var(--color3);
+}
+
+.main .abilities{
+    display: flex;
+    justify-content: center;
+}
+.main .abilities h4{
+    font-size: 30px;
+    padding-bottom: 10px;
+}
+.main .abilities p{
+    line-height: 28px;
+}
+.main .abilities img{
+    height: 50px;
+}
+.main .abilities .abilitie1,
+.main .abilities .abilitie2,
+.main .abilities .abilitie3{
+    background: var(--color2);
+    border: #3d3d3d 2px solid;
+    border-radius: 10px;   
+    color: white;
+    padding: 25px;
+    margin: 10px;
+    width: 21%;
+}
+
+.main .more-abilities{
+    text-align: center;
+    margin: 60px auto;
+    width: 50%;
+}
+.main .more-abilities a{
+    color: white;
+    padding: 15px 30px 15px 30px;
+    border-radius: 8px;
+    background: var(--color3);
+
+}
+.main .more-abilities a:hover{
+    padding: 16px 31px 16px 31px;
+    font-size: 17px;
+}
+/* Proyects section */
+.main .experience{
+    text-align: center;
+    margin: 60px auto;
+    display: grid;
+    grid-template-rows: repeat(5, auto);
+    grid-gap: 60px;
+}
+.main .experience h3{
+    text-align: center;
+    font-size: 30px;
+    color: var(--color3);
+}
+.main .experience img{
+    width: 75%;
+} 
+.main .more-exp{
+    text-align: center;
+    margin: auto;
+    width: 50%;
+    margin-bottom: 80px;
+}
+.main .more-exp a{
+    color: white;
+    padding: 15px 40px 15px 40px;
+    border-radius: 8px;
+    background: var(--color3);
+}
+.main  .more-exp a:hover{
+    padding: 16px 41px 16px 41px;
+    font-size: 17px;
+}
+/* Footer section */
+.footer{
+    height: 250px;
+    display: grid;
+    grid-gap: 10px;
+    padding-top: 50px;
+    grid-template-columns: 2fr repeat(4, 1fr);
+    grid-template-rows: 3fr 1.5fr;
+    background: var(--color2);
+    color: white;
+}
+.footer .logo h3{
+    font-size: 27px;
+    margin-left: 150px;
+}
+.footer .copy{
+    font-size: 10px;
+    margin-left: 150px;
+    padding-top: 20px;
+    grid-column: 1 / 5;
+    border-top: #3d3d3d 2px solid;
+    border-radius: 4px;
+}
+.footer .options2 ul li,
+.footer .contact ul li,
+.footer .social h4{
+    margin-bottom: 20px;
+}
+.first, .social h4{
+    color: var(--color3);
+}
+.social img{
+    height: 40px;
+    padding-right: 1%;
+}
+.footer .options2 ul li a:hover,
+.footer .contact ul li a:hover{
+    color: var(--color3);
+}
