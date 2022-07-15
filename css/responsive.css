@@ -1,0 +1,63 @@
+/*Author: Luis David Jimenez Martinez*/
+@media (max-width:1250px) {
+    .card{
+      width: 17%;
+      margin: 1.45%;
+    }
+    .card p{
+      display: block;
+      width: 90%;
+      margin: 0px auto;
+      text-align: center;
+    }
+  }
+  @media (max-width: 1080px) {
+
+
+    .card .category{
+      font-size: 17px;
+    }
+    .card .description{
+      font-size: 14px;
+    }
+  }
+  @media (max-width: 970px) {
+
+  }
+  @media (max-width: 925px) {
+   
+  }
+  @media (max-width: 899px) {
+
+  }
+  @media (max-width: 799px) {
+    .card{
+      width: 20%;
+      height: auto;
+      margin: 2.45%;
+    }
+    .card .category{
+      font-size: 15px;
+    }
+    .card .description{
+      display: none;
+    }
+  }
+  @media (max-width: 724px){
+    #cards{
+        flex-wrap: wrap;
+    }
+  }
+  @media (max-width: 660px){
+    .card{
+        width: 30%;
+        height: auto;
+        margin: 2.45%;
+      }
+  }
+  @media (max-width: 570px){
+    .footer{
+        display: none; 
+    }
+  }
+  

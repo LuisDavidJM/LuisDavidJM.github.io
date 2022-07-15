@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <title>Portfolio</title>
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=DM+Sans&display=swap" rel="stylesheet">
@@ -13,50 +14,69 @@
 
 <body>
     <div class="conteiner">
+
+        <!--NAV SECTION-->
         <header class="header">
             <div class="logo">
-                <h3>Luis David</h3>
+                <img src="img/facebook.png" alt="Prueba">
+                <h3>LUIS DAVID</h3>
             </div>
             <div class="options">
                 <ul>
-                    <li><a href="#">Inicio</a></li>
-                    <li><a href="#">Acerca de mi</a></li>
-                    <li><a href="#">Proyectos</a></li>
+                    <li><a href="#">HOME</a></li>
+                    <li><a href="#">SKILLS</a></li>
+                    <li><a href="#">ABOUT ME</a></li>
+                    <li><a href="#">PROYECTS</a></li>
+                    <li><a href="#">CONTACT</a></li>
                 </ul>
-            </div>
-            <div class="button">
-                <a href="#">Contactame</a>
             </div>
         </header>
         <main class="main">
-            <img class="logo" src="img/logo.png" alt="logo">
-            <div class="about-me">
-                <div class="acerca">
-                    <h2>Acerca de mi</h2>
-                </div>
-                <div class="information">
-                    <p>
-                        Hola! mi nombre es Luis Electronic y tengo una gran
-                        afinidad hacía el trabajo colaborativo, me gusta crear diseños que
-                        inspiren e involucren a las personas. Como diseñador UI, considero que
-                        un buen producto no solo brinda una solución sino que permite crear
-                        una experiencia emocional en las personas que lo usan.
-                        <br>
-                        En mi proceso creativo utilizo herramientas como Figma, Adobe XD,
-                        Photoshop e Illustrator que me ayudan en el flujo de trabajo para la
-                        producción de interfaces de usuario.
-                    </p>
-                </div>
-                <div class="more">
-                    <a href="#">Mas acerca de mi &rarr;</a>
-                </div>
-                <div class="yo">
-                    <img src="img/1.jpg" alt="Yo">
-                </div>
-            </div>
+
+            <!--MAIN SECTION-->
+            <img class="main" src="img/logo.png" alt="logo">
+
+            <!--SKILLS SECTION-->
             <div class="my-abilities">
-                <h3>Mis habilidades</h3>
+                <h3>MY SKILLS</h3>
             </div>
+
+            <div id="cards">
+
+                <div class="card">
+                  <img class="icon" src="img/facebook.png" alt="Prueba">
+                  <h2 class="category">Desarrollo Web</h2>
+                  <p class="description">
+                    Aprende los principales lenguajes para desarrollar wbs ¡Conviertete en WebMaster!
+                  </p>
+                </div>
+      
+                <div class="card">
+                  <img class="icon" src="img/facebook.png" alt="Prueba">
+                  <h2 class="category">Sistemas operativos</h2>
+                  <p class="description">
+                    Aprende a administrar sistemas Windows y Linux
+                  </p>
+                </div>
+      
+                <div class="card">
+                  <img class="icon" src="img/facebook.png" alt="Prueba">
+                  <h2 class="category">Hardware</h2>
+                  <p class="description">
+                    Conoce los entresijos del Hardware
+                  </p>
+                </div>
+      
+                <div class="card">
+                  <img class="icon" src="img/facebook.png" alt="Prueba">
+                  <h2 class="category">Redes e Internet</h2>
+                  <p class="description">
+                    Aprende a configurar y administrar redes informáticas y servidores
+                  </p>
+                </div>
+      
+              </div>
+            <!--
             <div class="abilities">
                 <div class="abilitie1">
                     <img src="img/1.jpg" alt="Logo1">
@@ -92,9 +112,38 @@
                     </p>
                 </div>
             </div>
+            -->
             <div class="more-abilities">
-                <a href="#">Ver mas de mis habilidades &rarr;</a>
+                <a href="#">MORE SKILS &rarr;</a>
             </div>
+
+            <!--ABOUT ME SECTION-->
+            <div class="about-me">
+                <div class="acerca">
+                    <h2>Acerca de mi</h2>
+                </div>
+                <div class="information">
+                    <p>
+                        Hola! mi nombre es Luis Electronic y tengo una gran
+                        afinidad hacía el trabajo colaborativo, me gusta crear diseños que
+                        inspiren e involucren a las personas. Como diseñador UI, considero que
+                        un buen producto no solo brinda una solución sino que permite crear
+                        una experiencia emocional en las personas que lo usan.
+                        <br>
+                        En mi proceso creativo utilizo herramientas como Figma, Adobe XD,
+                        Photoshop e Illustrator que me ayudan en el flujo de trabajo para la
+                        producción de interfaces de usuario.
+                    </p>
+                </div>
+                <div class="more">
+                    <a href="#">Mas acerca de mi &rarr;</a>
+                </div>
+                <div class="yo">
+                    <img src="img/1.jpg" alt="Yo">
+                </div>
+            </div>
+
+            <!--PROYECT SECTION-->
             <div class="experience">
                 <h3>Algunos de mis proyectos</h3>
                 <a href="#"><img src="img/experiencia1.png" alt="proyecto1"></a>
@@ -105,6 +154,8 @@
                 <a href="#">Ver mas experiencia &rarr;</a>
             </div>
         </main>
+
+        <!--FOOTER SECTION-->
         <footer class="footer">
             <div class="logo">
                 <h3>Luis Electronic</h3>

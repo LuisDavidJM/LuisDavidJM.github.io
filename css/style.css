@@ -2,69 +2,58 @@
     font-family: 'DM Sans', sans-serif;
     margin: 0px;
     padding: 0px;
+    --color1: rgba(10,10,12,1);
     --color2: rgba(23,23,25,1);
     --color3: #f9b53a;
 }
 
-.conteiner{
-    display: grid;
-    grid-gap: 0px;
-    grid-template-columns: 1fr;
-    grid-template-rows: 80px auto 150px;
-    grid-template-areas:
-        "header"
-        "main"
-        "footer" ;   
-}
 /* Header section */
 .header{
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-areas: "logo options button";
+    display: flex;
     background: var(--color2);
     color: white;
+    height: 80px;
 }
 a{
     text-decoration: none;
     color: white;
 }
 .header .logo{
+    display: flex;
     margin: auto;
     font-size: 25px;
+}
+
+.header .logo img{
+    width: 40px;
+    height: 40px;
+    padding-right: 15px;
 }
 
 .options{
     margin: auto;
 }
-.button{
-    margin: auto;
-    padding: 15px 30px 15px 30px;
-    border-radius: 8px;
-    background: var(--color3);
-}
-.button:hover{
-    padding: 16px 31px 16px 31px;
-    font-size: 17px;
-}
+
  .options ul, .options2 ul, .contact ul{
      list-style: none;
  }
  .options ul li{
     display: inline-block;
-    margin: 15px 15px 7px 15px;
+    margin: 15px 15px 7px 7px;
     padding-bottom: 6px;
     border-bottom: rgba(0,0,0,0) 2px solid;
  }
  .options ul li:hover{
     border-bottom: var(--color3) 2px solid; 
  }  
- /* Logo section */
-main .logo{
+
+main .main{
     width: 100%;
  }
 .main {
     background: #3d3d47;
  }
+
 /* Perfil section */
 .about-me{
     
@@ -109,7 +98,7 @@ main .logo{
     padding-right: 60px;
     line-height: 25px;
 }
-/* Abilities section */
+/* Skills section */
 .main .my-abilities{
     margin: 60px auto;
     width: 50%;
@@ -120,6 +109,96 @@ main .logo{
     color: var(--color3);
 }
 
+/* TARGETAS */
+#cards{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.card{
+    width: 17%;
+    min-width: 100px;
+    height: 305px;
+    border: 2px solid #3d3d3d;
+    border-radius: 10px;
+    background: var(--color2);
+    cursor: pointer;
+    overflow: hidden;
+    margin: 22px;
+
+    margin-top: 10px;
+    padding: 25px;
+    transition: all 300ms;
+  }
+  .card:hover{
+    background: var(--color1);
+  }
+
+  .card .icon{
+    display: block;
+    width: 100px;
+    height: 100px;
+    text-align: center;
+    margin: 0px auto;
+    margin-bottom: 22px;
+    transition: all 300ms;
+  }
+  .card:hover .icon{
+    animation: showIcon 300ms linear;
+  }
+  @keyframes showIcon {
+    from{
+      transform: translateY(-200%);
+    }
+    to{
+      transform: translateY(0%);
+    }
+  }
+  .card .category{
+    width: 100%;
+    height: 50px; 
+    margin-bottom: 22px;
+    font-size: 21px;
+    font-weight: bold;
+    text-align: center;
+    color: white;
+    transition: all 300ms;
+  }
+  .card:hover .category{
+    color: white;
+    animation: showCategory 400ms linear;
+  }
+  @keyframes showCategory {
+    from{
+      transform: translateY(-200%);
+      color: black;
+    }
+    to{
+      transform: translateY(0%);
+      color: white;
+    }
+  }
+  .card .description{
+    text-align: center;
+    color: white;
+    font-size: 15px;
+    transition: all 300ms;
+  }
+  .card:hover .description{
+    color: white;
+    animation: showDescription 400ms linear;
+  }
+  @keyframes showDescription {
+    from{
+      transform: translateX(-300%);
+      color: black;
+    }
+    to{
+      transform: translateX(0%);
+      color: white;
+    }
+  }
+/*
 .main .abilities{
     display: flex;
     justify-content: center;
@@ -145,11 +224,11 @@ main .logo{
     margin: 10px;
     width: 21%;
 }
-
+*/
 .main .more-abilities{
     text-align: center;
     margin: 60px auto;
-    width: 50%;
+    width: 100%;
 }
 .main .more-abilities a{
     color: white;
