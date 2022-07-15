@@ -31,6 +31,23 @@
 
   }
   @media (max-width: 799px) {
+    .options{
+      display: none;
+      position: absolute;
+      background: var(--primary);
+      top: 80px;
+      width: 100%;
+      text-align: center;
+      /*display: inline; js*/
+    }
+    .options ul li{
+      display: block;
+      padding: 20px 0;
+      border-top: 1px solid var(--primary-back);
+   }
+    .menu{
+      display: inline;
+   }
     .card{
       width: 20%;
       height: auto;
@@ -41,6 +58,13 @@
     }
     .card .description{
       display: none;
+    }
+    .about-me .yo{
+      float: none;
+      text-align: center;
+    }
+    .about-me .acerca{
+      text-align: center;
     }
   }
   @media (max-width: 724px){
@@ -56,8 +80,6 @@
       }
   }
   @media (max-width: 570px){
-    .footer{
-        display: none; 
-    }
+    
   }
   
