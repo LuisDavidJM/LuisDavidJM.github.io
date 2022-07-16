@@ -12,13 +12,19 @@
     }
   }
   @media (max-width: 1080px) {
-
-
     .card .category{
       font-size: 17px;
     }
     .card .description{
       font-size: 14px;
+    }
+    .projects .info-main-project{
+      margin-left: 5%;
+      margin-right: 20%;
+    }
+    .projects .left .info-main-project{
+        margin-left: 20%;
+        margin-right: 5%;
     }
   }
   @media (max-width: 970px) {
@@ -28,7 +34,55 @@
    
   }
   @media (max-width: 899px) {
-
+    .card{
+      width: 20%;
+      height: auto;
+      margin: 2.45%;
+    }
+    .card .category{
+      font-size: 15px;
+    }
+    .about-me .yo{
+      float: none;
+      text-align: center;
+      margin: auto;
+    }
+    .about-me .information p{
+      padding-left: 5%;
+      margin-bottom: 20px;
+   }
+    .about-me .acerca{
+      text-align: center;
+    }
+    .contact-section{
+      width: 70%;
+    }
+    .projects .left .info-main-project,
+    .projects .right .info-main-project{
+        margin-left: 20%;
+        margin-right: 20%;
+        text-align: center;
+    }
+    .projects .left,
+    .projects .right{
+      float: none;
+    }
+    .projects .img-project{
+      width: 100%;
+      padding-top: 50px;
+      padding-bottom: 15px;
+    }
+    .projects .info-project{
+      width: 100%;
+      padding-top: 15px;
+      padding-bottom: 50px;
+    }
+    .projects .img-project:first-child{
+      padding-top: 20px;
+    }
+    .projects{
+      height: auto;
+    }
   }
   @media (max-width: 799px) {
     .options{
@@ -48,29 +102,20 @@
     .menu{
       display: inline;
    }
-    .card{
-      width: 20%;
-      height: auto;
-      margin: 2.45%;
-    }
-    .card .category{
-      font-size: 15px;
-    }
-    .card .description{
-      display: none;
-    }
-    .about-me .yo{
-      float: none;
-      text-align: center;
-    }
-    .about-me .acerca{
-      text-align: center;
-    }
   }
   @media (max-width: 724px){
     #cards{
         flex-wrap: wrap;
     }
+    #contact-form .grid-form{
+
+      grid-template-columns: 1fr;
+      grid-template-rows: 1fr 1fr 2fr;
+    }
+    .grid-form .form-message{
+      grid-column: 1 / 2;	
+    }
+
   }
   @media (max-width: 660px){
     .card{
@@ -80,6 +125,20 @@
       }
   }
   @media (max-width: 570px){
-    
+    .about-me .yo{
+      width: 250px;
+   }
+    .about-me .yo img{
+      width: 250px;
+    }
+    .projects .left .info-main-project,
+    .projects .right .info-main-project{
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+    .projects .img-project img{
+      width: 300px;
+      height: auto;
+  }
   }
   

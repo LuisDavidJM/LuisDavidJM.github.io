@@ -7,9 +7,6 @@
     <link rel="icon" href="img/portafolio-icon.png">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/responsive.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=DM+Sans&display=swap" rel="stylesheet">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 
@@ -24,11 +21,11 @@
             </div>
             <div class="options">
                 <ul>
-                    <li><a href="#">HOME</a></li>
-                    <li><a href="#">SKILLS</a></li>
-                    <li><a href="#">ABOUT ME</a></li>
-                    <li><a href="#">PROYECTS</a></li>
-                    <li><a href="#">CONTACT</a></li>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="#skills">SKILLS</a></li>
+                    <li><a href="#about-me">ABOUT ME</a></li>
+                    <li><a href="#proyects">PROYECTS</a></li>
+                    <li><a href="#contact">CONTACT</a></li>
                 </ul>
             </div>
             <div class="menu">
@@ -54,53 +51,65 @@
             </div>
             
             <!--SKILLS SECTION-->
-            <div class="my-abilities">
+            <div id="skills" class="my-abilities">
                 <h3>MY SKILLS</h3>
             </div>
 
             <div id="cards">
 
                 <div class="card">
-                    <img class="icon" src="img/facebook.png" alt="Prueba">
-                    <h2 class="category">Desarrollo Web</h2>
+                    <img class="icon" src="img/frontend-icon.png" alt="Frontend Icon">
+                    <h2 class="category">Front-End</h2>
                     <p class="description">
-                        Aprende los principales lenguajes para desarrollar wbs ¡Conviertete en WebMaster!
+                        Having HTML, CSS, SEO and more skills
+                    </p>
+                    <p class="description level">
+                        <span>Level: HIGH</span>
                     </p>
                 </div>
 
                 <div class="card">
-                    <img class="icon" src="img/facebook.png" alt="Prueba">
-                    <h2 class="category">Sistemas operativos</h2>
+                    <img class="icon" src="img/javascript-icon.png" alt="JavaScript Icon">
+                    <h2 class="category">Javascript</h2>
                     <p class="description">
-                        Aprende a administrar sistemas Windows y Linux
+                        Programming skills and framework management
+                    </p>
+                    <p class="description level">
+                        <span>Level: INTERMEDIATE</span>
                     </p>
                 </div>
 
                 <div class="card">
-                    <img class="icon" src="img/facebook.png" alt="Prueba">
-                    <h2 class="category">Hardware</h2>
+                    <img class="icon" src="img/git-icon.png" alt="Git Icon">
+                    <h2 class="category">Git</h2>
                     <p class="description">
-                        Conoce los entresijos del Hardware
+                        Knowledge of structure and repositories
+                    </p>
+                    <p class="description level">
+                        <span>Level: HIGH</span>
                     </p>
                 </div>
 
                 <div class="card">
-                    <img class="icon" src="img/facebook.png" alt="Prueba">
-                    <h2 class="category">Redes e Internet</h2>
+                    <img class="icon" src="img/python-icon.png" alt="Python Icon">
+                    <h2 class="category">Python</h2>
                     <p class="description">
-                        Aprende a configurar y administrar redes informáticas y servidores
+                        Programming skills and library management
+                    </p>
+                    <p class="description level">
+                        <span>Level: HIGH</span>
                     </p>
                 </div>
 
             </div>
-            <div class="more-abilities">
+            <div id="about-me" class="more-abilities">
                 <a href="#">MORE SKILS &rarr;</a>
             </div>
 
             <!--ABOUT ME SECTION-->
             <div class="about-me">
                 <div class="yo">
-                    <img src="img/1.jpg" alt="Yo">
+                    <img src="img/luisdavid.jpg" alt="Luis David">
                 </div>
                 <div class="about">
                     <div class="acerca">
@@ -119,7 +128,7 @@
                             producción de interfaces de usuario.
                         </p>
                     </div>
-                    <div class="more">
+                    <div id="proyects" class="more">
                         <a href="#">MORE ABOUT ME &rarr;</a>
                     </div>
                 </div>
@@ -132,19 +141,86 @@
             </div>
             <div class="experience">
 
+                <div class="projects">
+                    <div class="img-project left">
+                        <img src="img/prueba.png" alt="Animated Blog">
+                    </div>
+                    <div class="info-project right">
+                        <div class="info-main-project">
+                            <h3>Animated Blog <span>2020</span></h3>
+                            <p>Project made with HTML and CSS, using Keyframes and transitions.</p>
+                            <div class="more-project">
+                                <a href="#">More Info</a>
+                                <a href="#">Visit Site</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="clearfix"></div>
 
+                <div class="projects">
+                    <div class="img-project right">
+                        <img src="img/prueba.png" alt="Information Blog">
+                    </div>
+                    <div class="info-project left">
+                        <div class="info-main-project">
+                            <h3>Information Blog <span>2022</span></h3>
+                            <p>Proyect made with HTML, CSS and JavaScript, include SEO.</p>
+                            <div class="more-project">
+                                <a href="#">More Info</a>
+                                <a href="#">Visit Site</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="clearfix"></div>
+
+                <div class="projects">
+                    <div class="img-project left">
+                        <img src="img/prueba.png" alt="JavaScript Page">
+                    </div>
+                    <div class="info-project right">
+                        <div class="info-main-project">
+                            <h3>JavaScript Page <span>2022</span></h3>
+                            <p>Project made with HTML, CSS, JavaScript and jQuery library.</p>
+                            <div class="more-project">
+                                <a href="#">More Info</a>
+                                <a href="#">Visit Site</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="clearfix"></div>
+
+                <div class="projects last">
+                    <div class="img-project right">
+                        <img src="img/prueba.png" alt="Rock Paper Scissors Game">
+                    </div>
+                    <div class="info-project left">
+                        <div class="info-main-project">
+                            <h3>Rock Paper Scissors Game <span>2020</span></h3>
+                            <p>Using graphical interface with PySide2, QtDesigner and TCP multiThreading.</p>
+                            <div class="more-project">
+                                <a href="#">More Info</a>
+                                <a href="#">Visit Site</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="clearfix"></div>
 
             </div>
-            <div class="more-exp">
+            <div id="contact" class="more-exp">
                 <a href="#">MORE PROYECTS &rarr;</a>
             </div>
 
             <!--CONTACT SECTION-->
             <div class="contact">
-                <div class="contact-title">
-                    <h2>CONTACT ME</h2>
-                </div>
+            
                 <div class="contact-section">
+                    <div class="contact-title">
+                        <h2>CONTACT ME</h2>
+                    </div>
 
                     <form id="contact-form" action="" method="POST">
                         <div class="grid-form">
@@ -164,7 +240,7 @@
                             </div>
                         </div>
                         <div class="form-submit">
-                            <button type="submit" class="submit">Send</button>
+                            <button type="submit" class="submit">SEND</button>
                         </div>
 
                     </form>
@@ -187,5 +263,8 @@
     <a href="https://www.flaticon.es/iconos-gratis/portafolio" title="portafolio iconos">Portafolio iconos creados por Freepik - Flaticon</a>
     <a href="https://www.flaticon.es/iconos-gratis/menu" title="menú iconos">Menú iconos creados por Freepik - Flaticon</a>
     <a href="https://www.flaticon.es/iconos-gratis/computadora" title="computadora iconos">Computadora iconos creados por Freepik - Flaticon</a>
+    <a href="https://www.flaticon.com/free-icons/design" title="design icons">Design icons created by Freepik - Flaticon</a>
+    <a href="https://www.flaticon.com/free-icons/python" title="python icons">Python icons created by Freepik - Flaticon</a>
+    <a href="https://www.flaticon.com/free-icons/javascript" title="javascript icons">Javascript icons created by Freepik - Flaticon</a>
 -->
 </html>
