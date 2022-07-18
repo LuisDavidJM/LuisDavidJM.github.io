@@ -6,6 +6,7 @@
       margin: 0px auto;
       text-align: center;
     }
+
   }
   @media (max-width: 1080px) {
 
@@ -23,12 +24,20 @@
         margin-left: 20%;
         margin-right: 5%;
     }
-  }
-  @media (max-width: 970px) {
+    .projects .right img{
+      margin-left: -30px;
+    }
 
   }
+  @media (max-width: 970px) {
+    .projects .left img{
+      margin-left: -20px;
+    }
+  }
   @media (max-width: 925px) {
-   
+    .projects .right img{
+      margin-left: -70px;
+    }
   }
   @media (max-width: 899px) {
     .card{
@@ -66,6 +75,13 @@
       width: 100%;
       padding-top: 50px;
       padding-bottom: 15px;
+    }
+    .projects .img-project img{
+      margin: auto;
+      transition: all 1000ms;
+    }
+    .projects .img-project:hover img{
+      margin: auto;
     }
     .projects .info-project{
       width: 100%;
@@ -125,8 +141,9 @@
         margin-right: 5%;
     }
     .projects .img-project img{
-      width: 300px;
-      height: auto;
+      height: 200px;
+      width: auto;
   }
-  }
+
+}
   

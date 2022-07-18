@@ -1,0 +1,11 @@
+.banner{
+    height: 40vh;
+    animation: none;
+}
+.main .my-experience{
+    padding-top: 0;
+}
+.main .my-experience h3{
+    margin-top: -23vh;
+    margin-bottom: 17vh;
+}
