@@ -1,0 +1,16 @@
+body{
+    background: url("../img/azul.webp");
+    background-attachment: fixed;
+}
+
+#logo{
+    background: blue;
+}
+
+#menu ul li:hover{
+    background: blue;
+}
+
+.button-more{
+    background: blue;
+}

@@ -1,0 +1,248 @@
+/*Author: Luis David Jimenez Martinez*/
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+.clearfix{
+    float: none;
+    clear: both;
+}
+
+#global {
+    width: 65%;
+    margin: 0px auto;
+    margin-top: 30px;
+    padding: 25px;
+    background: white;
+    box-shadow: 0px 0px 2px black;
+}
+
+#logo{
+    font-family: "Verdana", "Arial";
+    font-size: 30px;
+    letter-spacing: 4px;
+    line-height: 95px;
+    color: white;
+    text-align: center;
+    width: 400px;
+    height: 100px;
+    margin-bottom: 20px;
+    float: left;
+}
+
+#menu{
+    font-family: Arial, Helvetica, sans-serif;
+    background: gray;
+    width: 100%;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+}
+
+#menu ul{
+    line-height: 46px;
+    list-style: none;
+    text-align: center;
+}
+
+#menu ul li{
+    height: 46px;
+    display: inline-block;
+    transition: all 400ms;
+}
+
+#menu a{
+    display: block;
+    color: white;
+    text-decoration: none;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+#posts{
+    width: 60%;
+    float: left;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.post{
+    padding: 10px;
+}
+
+.post h2{
+    font-size: 30px;
+}
+
+.post .date{
+    display: block;
+    color: gray;
+    margin-top: 5px;
+}
+
+.post p{
+    margin-top: 30px;
+    margin-bottom: 20px;
+    line-height: 25px;
+    text-align: justify;
+}
+
+.button-more{
+    padding: 15px;
+    color: white;
+    text-decoration: none;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    display: block;
+    width: 70px;
+    text-align: center;
+}
+
+#sidebar{
+    font-family: Arial, Helvetica, sans-serif;
+    width: 31%;
+    float: right;
+}
+
+#sidebar h4{
+    margin-top: 50px;
+    margin-bottom: 20px;
+    text-align: center;
+    line-height: 10px;
+    color: gray;
+    background: url(../img/lines.png) repeat-x;
+}
+
+#sidebar h4 span{
+    background: white;
+    padding: 5px;
+}
+
+#sidebar img{
+    width: 100%;
+}
+
+#sidebar p{
+    font-size: 15px;
+    text-align: justify;
+}
+
+form input[type="text"],
+form input[type="email"],
+form input[type="password"],
+form input[type="number"],
+select{
+    padding: 5px;
+    border-radius: 2px;
+    border: 1px solid gray;
+    width: 80%;
+    margin-top: 5px;
+    margin-bottom: 10px;
+    box-shadow: 0px 0px 2px gray;
+}
+
+form input[type="submit"]{
+    background: #eee;
+    padding: 10px;
+    border: 1px solid gray;
+    color: gray;
+    cursor: pointer;
+}
+
+footer{
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    height: 47px;
+    background: rgba(51, 51, 51, 0.7);
+    margin: 0px auto;
+    margin-top: 10px;
+    width: 65%;
+    padding-left: 20px;
+    padding-right: 20px;
+    line-height: 50px;
+    text-align: center;
+}
+
+/*Clases para dimensionar slider*/
+.bx-wrapper, .bx-viewport{
+    height: 250px !important;
+}
+
+/* Color change */
+#selector-theme{
+    position: fixed;
+    top: 30px;
+    background: rgba(51, 51, 51, 0.5);
+    width: 50px;
+    height: 100px;
+}
+
+#to-green,
+#to-red,
+#to-blue{
+    width: 25px;
+    height: 25px;
+    border: 1px solid white;
+    display: block;
+    margin: 0px auto;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    cursor: pointer;
+}
+
+#to-green{
+    background: green;
+}
+
+#to-red{
+    background: red;
+}
+
+#to-blue{
+    background: blue;
+}
+
+.subir{
+    color: white;
+    text-decoration: none;
+    display: block;
+    float: right;
+}
+
+#box{
+    width: 60%;
+    float: left;
+    margin-top: 40px;
+}
+
+h2{
+    font-size: 30px;
+    font-family: "Verdana", "Arial";
+    margin-bottom: 30px;
+}
+
+#reloj{
+    font-size: 30px;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    border: 5px dashed gray;
+    width: 30%;
+    padding: 30px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+#form_contact{
+    width: 50%;
+    margin: 0 auto;
+    margin-top: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#form_contact label{
+    width: 100%;
+    display: block;
+    margin-top: 5px;
+}
+#form_c{
+    text-align: center;
+}
