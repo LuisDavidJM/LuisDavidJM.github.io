@@ -7,6 +7,12 @@
       text-align: center;
     }
 
+    .main-contain .main-email{
+      width: 30%;
+      margin-left: 35%;
+      margin-right: 35%;
+  }
+
   }
   @media (max-width: 1080px) {
 
@@ -40,6 +46,12 @@
     }
   }
   @media (max-width: 899px) {
+    .main-contain .main-email{
+      width: 40%;
+      margin-left: 30%;
+      margin-right: 30%;
+    }
+    
     .card{
       height: auto;
     }
@@ -94,6 +106,10 @@
     .projects{
       height: auto;
     }
+    #up-button{
+      width: 50px;
+      height: 50px;
+    }
   }
   @media (max-width: 799px) {
     .options{
@@ -105,6 +121,11 @@
       text-align: center;
       /*display: inline; js*/
     }
+    
+    .options-toggle{
+      display: inline;
+    }
+    
     .options ul li{
       display: block;
       padding: 20px 0;
@@ -113,6 +134,10 @@
     .menu{
       display: inline;
    }
+
+   #up-button{
+    display: none;
+}
   }
   @media (max-width: 724px){
     #contact-form .grid-form{
@@ -126,9 +151,19 @@
 
   }
   @media (max-width: 660px){
-
+    .main-contain .main-email{
+      width: 50%;
+      margin-left: 25%;
+      margin-right: 25%;
+    }
   }
   @media (max-width: 570px){
+    .main-contain .main-email{
+      width: 70%;
+      margin-left: 15%;
+      margin-right: 15%;
+    }
+    
     .about-me .yo{
       width: 250px;
    }

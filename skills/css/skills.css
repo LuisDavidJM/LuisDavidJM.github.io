@@ -9,8 +9,18 @@
     margin-top: -27vh;
     margin-bottom: 17vh;
 }
-
-#cards{
+.main .sub-skills,
+.main .sub-skills-first{
+  text-align: center;
+  font-size: 21px;
+}
+.main .sub-skills-first h3{
+    margin-top: 20vh;
+}
+.main .sub-skills h3{
+  margin-top: 40px;
+}
+.cards{
   padding-top: 50px;
 }
 .card{
