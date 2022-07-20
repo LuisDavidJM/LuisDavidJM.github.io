@@ -41,6 +41,38 @@ function downSide(){
     }
 }
 
+//Form and footer section
+$(document).ready(() => {
+    var form = $('#form-contact');
+    form.html('<form id="contact-form" action="" method="POST">' + 
+                '<div class="grid-form">' +
+                    '<div class="form-name">' +
+                        '<label for="name">Name</label>' +
+                        '<input id="name" type="text" name="name" class="name" required>' +
+                    '</div>' +
+                    '<div class="form-email">' +
+                        '<label for="email">Email</label>' +
+                        '<input id="email" type="email" name="email" class="email" required>' +
+                    '</div>' +
+                    '<div class="form-message">' +
+                        '<label for="message">Message</label>' +
+                        '<textarea id="message" name="message" class="message" required></textarea>' +
+                    '</div>' +
+                '</div>' +
+                '<div class="form-submit">' +
+                    '<button type="submit" class="submit">SEND</button>' +
+                '</div>' +
+            '</form>');
+
+    var footer = $('#footer-js');
+    footer.html('<footer class="footer">' +
+                    '<div class="copy">' +
+                        '<h3>Made with HTML, CSS and Javascript</h3>' +
+                        '<h3>Develop by Luis David Jimenez Martinez</h3>' +
+                    '</div>' +
+                '</footer>');
+});
+
 //Email show section
 var main_contain = document.querySelector('.main-contain');
 var main_email = document.querySelector('.main-email');
