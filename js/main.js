@@ -42,7 +42,7 @@ function downSide(){
 }
 
 //Form and footer section
-$(document).ready(() => {
+
     var form = $('#form-contact');
     form.html('<form id="contact-form" action="" method="POST">' + 
                 '<div class="grid-form">' +
@@ -83,7 +83,7 @@ $(document).ready(() => {
 
     const btn = document.getElementById('submit');
 
-    document.getElementById('#contact-form')
+    document.getElementById('contact-form')
     .addEventListener('submit', function(event) {
     event.preventDefault();
 
@@ -101,9 +101,6 @@ $(document).ready(() => {
         alert(JSON.stringify(err));
         });
     });
-});
-
-
 
 //Email show section
 var main_contain = document.querySelector('.main-contain');
