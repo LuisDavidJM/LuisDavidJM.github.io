@@ -535,7 +535,7 @@ a{
     padding-bottom: 10px;
 }
 
-.form-submit button{
+.form-submit .submit{
     color: black;
     padding: 15px 30px 15px 30px;
     border-radius: 10px;
@@ -543,7 +543,7 @@ a{
     box-shadow: rgba(0, 0, 0, 0.15) 2.4px 2.4px 3.2px;
     background: var(--secondary);
 }
-.form-submit button:hover{
+.form-submit .submit:hover{
     background: var(--secondary-back);
     cursor: pointer;
 }

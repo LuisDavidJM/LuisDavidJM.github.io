@@ -60,7 +60,7 @@ function downSide(){
                     '</div>' +
                 '</div>' +
                 '<div class="form-submit">' +
-                    '<button type="submit" class="submit">SEND</button>' +
+                    '<input type="submit" class="submit" value="SEND">' +
                 '</div>' +
             '</form>');
 
