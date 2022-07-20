@@ -87,17 +87,17 @@ function downSide(){
     .addEventListener('submit', function(event) {
     event.preventDefault();
 
-    btn.value = 'SENDING';
+   
 
     const serviceID = 'default_service';
     const templateID = 'template_s72fxza';
 
     emailjs.sendForm(serviceID, templateID, this)
         .then(() => {
-        btn.value = 'SEND';
+        
         alert('Message Sent!!');
         }, (err) => {
-        btn.value = 'SEND';
+        
         alert(JSON.stringify(err));
         });
     });
