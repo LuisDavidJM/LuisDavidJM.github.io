@@ -71,7 +71,39 @@ $(document).ready(() => {
                         '<h3>Develop by Luis David Jimenez Martinez</h3>' +
                     '</div>' +
                 '</footer>');
+
+    //Form action
+    /*var form_action = document.querySelector('#contact-form');
+    form_action.addEventListener('submit',formSubmit);
+
+    function formSubmit(event){
+        event.preventDefault();
+        alert('Message Sent!!')
+    }*/
+
+    const btn = document.getElementById('submit');
+
+    document.getElementById('#contact-form')
+    .addEventListener('submit', function(event) {
+    event.preventDefault();
+
+    btn.value = 'SENDING';
+
+    const serviceID = 'default_service';
+    const templateID = 'template_s72fxza';
+
+    emailjs.sendForm(serviceID, templateID, this)
+        .then(() => {
+        btn.value = 'SEND';
+        alert('Message Sent!!');
+        }, (err) => {
+        btn.value = 'SEND';
+        alert(JSON.stringify(err));
+        });
+    });
 });
+
+
 
 //Email show section
 var main_contain = document.querySelector('.main-contain');
