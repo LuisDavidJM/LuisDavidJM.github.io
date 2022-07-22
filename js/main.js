@@ -96,7 +96,7 @@ var main_email = document.querySelector('.main-email');
 main_contain.addEventListener('mouseover', function () {
     main_email.style.transform = 'scale(1)';
     main_email.style.transition = 'all 700ms ease';
-    main_email.innerHTML = 'luisdavidjm@gmail.com'
+    main_email.innerHTML = 'luisdavidjma@gmail.com'
 });
 main_contain.addEventListener('mouseout', function () {
     main_email.style.transform = 'scale(0)';

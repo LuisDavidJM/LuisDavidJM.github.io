@@ -1,0 +1,234 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+
+body {
+  background: hsl(237deg, 49%, 15%);
+}
+
+.clearfix {
+  clear: both;
+}
+
+#container {
+  width: 100%;
+  height: 100%;
+  text-align: center;
+}
+#container header {
+  width: 50%;
+  height: 120px;
+  margin: auto;
+  margin-top: 40px;
+  padding: 20px;
+  border-radius: 15px;
+  border: 2px solid gray;
+  display: flex;
+  justify-content: space-between;
+}
+#container header #title {
+  height: 120px;
+  width: auto;
+}
+#container header .score {
+  width: 100px;
+  background: white;
+  padding: 20px;
+  border-radius: 15px;
+  margin-left: 30px;
+  margin-right: 0;
+  text-align: center;
+  font-weight: bold;
+}
+#container header .score h3 {
+  font-size: 15px;
+  color: blue;
+}
+#container header .score .number {
+  font-size: 60px;
+  color: gray;
+}
+#container #selection {
+  width: 50%;
+  margin: 50px auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+#container #selection .select-circle {
+  height: 200px;
+  width: 200px;
+  border-radius: 1000px;
+  background: white;
+  display: flex;
+  margin: 20px 5%;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: all 700ms ease;
+}
+#container #selection .select-circle img {
+  width: 100px;
+  height: 100px;
+}
+#container #selection .rock {
+  border: 30px solid blue;
+}
+#container #selection .paper {
+  border: 30px solid orange;
+}
+#container #selection .scissors {
+  border: 30px solid red;
+}
+#container #selection .select-circle:hover {
+  transform: scale(1.1);
+}
+#container #game {
+  width: 100%;
+  margin: 100px auto;
+  display: flex;
+  justify-content: center;
+  display: none;
+}
+#container #game .select {
+  width: 25%;
+}
+#container #game .select h2 {
+  color: white;
+  font-size: 25px;
+  margin-bottom: 60px;
+}
+#container #game .select .game-select {
+  height: 230px;
+  width: 230px;
+  border-radius: 1000px;
+  background: white;
+  display: flex;
+  margin: auto;
+  align-items: center;
+  justify-content: center;
+}
+#container #game .select .game-select img {
+  width: 100px;
+  height: 100px;
+}
+#container #game .select .rock {
+  border: 35px solid blue;
+}
+#container #game .select .paper {
+  border: 35px solid orange;
+}
+#container #game .select .scissors {
+  border: 35px solid red;
+}
+#container #win-lose {
+  width: 20%;
+  text-align: center;
+  padding: 20px;
+  position: absolute;
+  left: 38%;
+  top: 47vh;
+  display: none;
+}
+#container #win-lose h3 {
+  font-size: 50px;
+  color: white;
+  margin-bottom: 20px;
+}
+#container #win-lose .play-again {
+  font-size: 18px;
+  color: blue;
+  padding-left: 70px;
+  padding-right: 70px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  background: white;
+  border: 1px solid gray;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: all 700ms ease;
+}
+#container #win-lose .play-again:hover {
+  transform: scale(1.1);
+  background: rgb(230, 230, 230);
+}
+#container #rules {
+  width: 40%;
+  height: 400px;
+  margin: auto 28%;
+  border: 1px solid black;
+  border-radius: 10px;
+  padding: 40px;
+  background-color: white;
+  position: absolute;
+  top: 25vh;
+  display: none;
+  transition: all 700ms ease;
+}
+#container #rules .head-rules {
+  display: flex;
+  justify-content: space-between;
+}
+#container #rules .head-rules h4 {
+  font-size: 30px;
+  color: blue;
+}
+#container #rules .head-rules .close {
+  width: 25px;
+  height: 25px;
+  cursor: pointer;
+  transition: all 200ms ease;
+}
+#container #rules .head-rules .close:hover {
+  transform: scale(1.2);
+}
+#container #rules .content-rules {
+  width: 350px;
+  height: auto;
+  margin: auto;
+  margin-top: 50px;
+}
+#container #rules-button {
+  color: white;
+  padding-left: 40px;
+  padding-right: 40px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  background: transparent;
+  border: 1px solid white;
+  border-radius: 10px;
+  font-size: 17px;
+  position: absolute;
+  cursor: pointer;
+  transition: all 700ms ease;
+  right: 40px;
+  bottom: 40px;
+}
+#container #rules-button:hover {
+  background: lightgrey;
+  color: blue;
+}
+#container #reset-button {
+  color: white;
+  padding-left: 40px;
+  padding-right: 40px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  background: transparent;
+  border: 1px solid white;
+  border-radius: 10px;
+  font-size: 17px;
+  position: absolute;
+  cursor: pointer;
+  transition: all 700ms ease;
+  left: 40px;
+  bottom: 40px;
+}
+#container #reset-button:hover {
+  background: lightgrey;
+  color: blue;
+}
+
+/*# sourceMappingURL=styles.css.map */

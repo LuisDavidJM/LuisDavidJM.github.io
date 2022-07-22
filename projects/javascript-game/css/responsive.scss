@@ -1,0 +1,190 @@
+@media (max-width: 1300px){
+    #container{
+
+        #selection{
+            width: 80%;
+        }
+
+        #game{
+
+            .select{
+                width: 50%;
+
+                .game-select{
+                    width: 200px;
+                    height: 200px;
+                }
+            }
+        }
+
+        #win-lose{
+    
+            h3{
+                font-size: 40px;
+            }
+    
+            .play-again{
+                padding-left: 50px;
+                padding-right: 50px;
+                padding-top: 15px;
+                padding-bottom: 15px;
+            }
+        }
+        
+    }
+    
+}
+
+@media (max-width: 1000px){
+    #container{
+
+        header{
+            width: 80%;
+            height: auto;
+        }
+
+        #selection{
+    
+            .select-circle{
+                height: 160px;
+                width: 160px;
+    
+                img{
+                    width: 80px;
+                    height: 80px;
+                }
+            }
+        }
+
+        #game{
+
+            .select{
+                width: 50%;
+
+                .game-select{
+                    width: 160px;
+                    height: 160px;
+                }
+            }
+        }
+
+        #win-lose{
+            width: 40%;
+            left: 28%;
+            top: 70vh;
+        }
+
+        #rules{
+            width: 70%;
+            margin: auto 9%;
+            top: 25vh;
+        }
+    }
+}
+
+@media (max-width: 700px){
+    #container{
+
+        header{
+            display: block;
+            text-align: center;
+            margin-top: 10px;
+            padding-top: 10px;
+            padding-bottom: 10px;
+    
+            #title{
+                height: 60px;
+            }
+
+            .score{
+                width: 100px;
+                margin: 10px auto 5px auto;
+                padding-top: 10px;
+                padding-bottom: 10px;
+            }
+            .f-left{
+                float: left;
+            }
+            .f-right{
+                float: right;
+            }
+        }
+
+        #selection{
+            margin: 20px auto;
+            width: 90%;
+
+            .select-circle{
+                height: 114px;
+                width: 114px;
+    
+                img{
+                    width: 50px;
+                    height: 50px;
+                }
+            }
+            .rock{
+                border: 17px solid blue;
+            }
+            .paper{
+                border: 17px solid orange;
+            }
+            .scissors{
+                border: 17px solid red;
+            }
+        }
+
+        #game{
+            margin: 25px auto;
+
+            .select{
+
+                h2{
+                    font-size: 20px;
+                    margin-bottom: 25px;
+                }
+                .game-select{
+                    width: 100px;
+                    height: 100px;
+
+                    img{
+                        width: 50px;
+                        height: 50px;
+                    }
+                }
+                .rock{
+                    border: 20px solid blue;
+                }
+                .paper{
+                    border: 20px solid orange;
+                }
+                .scissors{
+                    border: 20px solid red;
+                }
+            }
+        }
+
+        #win-lose{
+            width: 70%;
+            left: 10%;
+            top: 65vh;
+
+            h3{
+                font-size: 30px;
+                margin-bottom: 10px;
+            }
+        }
+
+        #rules{
+            width: 80%;
+            height: 350px;
+            margin: auto 4%;
+            top: 18vh;
+            padding: 20px;
+
+            .content-rules{
+                width: 250px;
+            }
+        }
+    }
+}

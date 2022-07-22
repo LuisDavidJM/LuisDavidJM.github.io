@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" sizes="32x32" href="img/favicon-32x32.png">
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="css/responsive.css">
+  <title>Rock, Paper, Scissors Game - Luis David Jimenez Martinez</title>
+</head>
+
+<body>
+  <div id="container">
+    <header>
+      <img id="title" src="img/logo.svg" alt="Rock, Paper, Scissors">
+      <div class="clearfix"></div>
+      <div id="pc-score" class="score f-left">
+        <h3>PC SCORE</h3>
+        <p id="pc-number" class="number">0</p>
+      </div>
+      <div id="my-score" class="score f-right">
+        <h3>MY SCORE</h3>
+        <p id="my-number" class="number">0</p>
+      </div>
+      <div class="clearfix"></div>
+    </header>
+    <main>
+
+      <div id="selection">
+        <div class="select-circle rock">
+          <img src="img/icon-rock.svg" alt="Rock">
+        </div>
+        <div class="select-circle paper">
+          <img src="img/icon-paper.svg" alt="Paper">
+        </div>
+        <div class="select-circle scissors">
+          <img src="img/icon-scissors.svg" alt="Scissors">
+        </div>
+      </div>
+
+      <div id="game">
+        <div class="select">
+          <H2>YOU PICKED</H2>
+          <div class="game-select op1">
+            <img src="img/icon-rock.svg" alt="Selection User">
+          </div>
+        </div>
+        <div class="select">
+          <h2>THE HOUSE PICKED</h2>
+          <div class="game-select op2">
+            <img src="img/icon-paper.svg" alt="Selection PC">
+          </div>
+        </div>
+      </div>
+
+      <div id="win-lose">
+        <h3></h3>
+        <button class="play-again">PLAY AGAIN</button>
+      </div>
+
+      <div id="rules">
+        <div class="head-rules">
+          <h4>RULES</h4>
+          <img class="close" src="img/icon-close.svg" alt="Close">
+        </div>
+          <img class="content-rules" src="img/image-rules.svg" alt="Rock, Paper, Scissors Rules"> 
+      </div>
+
+
+      
+    </main>
+    <button id="rules-button">RULES</button>
+    <button id="reset-button">RESET</button>
+    <!--
+    <footer id="footer">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+      Coded by <a href="#">Luis David Jimenez Martinez</a>.
+    </footer>
+    -->
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <script src="js/game.js"></script>
+    <script src="js/main.js"></script>   
+  </div>
+  
+</body>
+
+</html>

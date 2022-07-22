@@ -1,0 +1,142 @@
+@media (max-width: 1300px) {
+  #container #selection {
+    width: 80%;
+  }
+  #container #game .select {
+    width: 50%;
+  }
+  #container #game .select .game-select {
+    width: 200px;
+    height: 200px;
+  }
+  #container #win-lose h3 {
+    font-size: 40px;
+  }
+  #container #win-lose .play-again {
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+  }
+}
+@media (max-width: 1000px) {
+  #container header {
+    width: 80%;
+    height: auto;
+  }
+  #container #selection .select-circle {
+    height: 160px;
+    width: 160px;
+  }
+  #container #selection .select-circle img {
+    width: 80px;
+    height: 80px;
+  }
+  #container #game .select {
+    width: 50%;
+  }
+  #container #game .select .game-select {
+    width: 160px;
+    height: 160px;
+  }
+  #container #win-lose {
+    width: 40%;
+    left: 28%;
+    top: 70vh;
+  }
+  #container #rules {
+    width: 70%;
+    margin: auto 9%;
+    top: 25vh;
+  }
+}
+@media (max-width: 700px) {
+  #container header {
+    display: block;
+    text-align: center;
+    margin-top: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+  #container header #title {
+    height: 60px;
+  }
+  #container header .score {
+    width: 100px;
+    margin: 10px auto 5px auto;
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+  #container header .f-left {
+    float: left;
+  }
+  #container header .f-right {
+    float: right;
+  }
+  #container #selection {
+    margin: 20px auto;
+    width: 90%;
+  }
+  #container #selection .select-circle {
+    height: 114px;
+    width: 114px;
+  }
+  #container #selection .select-circle img {
+    width: 50px;
+    height: 50px;
+  }
+  #container #selection .rock {
+    border: 17px solid blue;
+  }
+  #container #selection .paper {
+    border: 17px solid orange;
+  }
+  #container #selection .scissors {
+    border: 17px solid red;
+  }
+  #container #game {
+    margin: 25px auto;
+  }
+  #container #game .select h2 {
+    font-size: 20px;
+    margin-bottom: 25px;
+  }
+  #container #game .select .game-select {
+    width: 100px;
+    height: 100px;
+  }
+  #container #game .select .game-select img {
+    width: 50px;
+    height: 50px;
+  }
+  #container #game .select .rock {
+    border: 20px solid blue;
+  }
+  #container #game .select .paper {
+    border: 20px solid orange;
+  }
+  #container #game .select .scissors {
+    border: 20px solid red;
+  }
+  #container #win-lose {
+    width: 70%;
+    left: 10%;
+    top: 65vh;
+  }
+  #container #win-lose h3 {
+    font-size: 30px;
+    margin-bottom: 10px;
+  }
+  #container #rules {
+    width: 80%;
+    height: 350px;
+    margin: auto 4%;
+    top: 18vh;
+    padding: 20px;
+  }
+  #container #rules .content-rules {
+    width: 250px;
+  }
+}
+
+/*# sourceMappingURL=responsive.css.map */
