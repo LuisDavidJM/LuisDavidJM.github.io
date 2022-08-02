@@ -1,5 +1,25 @@
 'use strict'
 
+//Navbar projects selection
+$(document).ready(function(){
+	$('#project-nav .option-nav[category="all"]').addClass('active');
+
+	$('.option-nav').click(function(){
+		var catProject = $(this).attr('category');
+		$('.option-nav').removeClass('active');
+		$(this).addClass('active');
+		//Hide all projectsx
+		$('.projects').hide();
+		//Show the category projects
+		$('.projects[category="'+catProject+'"]').show();
+	});
+
+    //Show all projects
+	$('.option-nav[category="all"]').click(function(){
+		$('.projects').show();
+	});
+});
+
 //Drop down menu section
 var menu = document.querySelector('.menu');
 var options = document.querySelector('.options');

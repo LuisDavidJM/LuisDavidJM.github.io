@@ -117,30 +117,16 @@ a{
     border-radius: 0 0 50% 50%;
     margin-left: -50%;
     background: linear-gradient(var(--primary) 60%, var(--primary-back) );
-    /*animation-name: backBanner;
-    animation-duration: 7s;
-    animation-iteration-count: infinite;
-    animation-timing-function: linear;*/
 }
-/*@keyframes backBanner {
-    0%{
-        border-radius: 0 0 50% 50%;
-      }
-    33%{
-        border-radius: 0 0 60% 40%;
-      }
-      66%{
-        border-radius: 0 0 40% 60%;
-      }
-      100%{
-        border-radius: 0 0 50% 50%;
-      }
-  }*/
 .main-contain{
     width: 100%;
     margin-top: -60vh;
     margin-bottom: 35vh;
     text-align: center;
+}
+.main-contain .description-front h1,
+.main-contain .description-front h2{
+    text-shadow: 1px 1px gray;
 }
 .img-front img{
     height: 150px;
@@ -176,6 +162,7 @@ a{
     text-align: center;
     font-size: 30px;
     color: black;
+    text-shadow: 1px 1px lightgray;
 }
 .cards{
     width: 100%;
@@ -338,13 +325,14 @@ a{
    text-align: justify;
 }
 
-/* Proyects section */
+/* Projects section */
 .main .my-experience h3{
     text-align: center;
     padding-top: 20px;
     padding-bottom: 50px;
     font-size: 30px;
     color: black;
+    text-shadow: 1px 1px lightgray;
 }
 .projects{
     width: 100%;

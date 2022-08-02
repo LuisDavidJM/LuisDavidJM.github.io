@@ -1,3 +1,34 @@
+#project-nav .active{
+    background-color: var(--primary-back);
+}
+#project-nav{
+    width: 100%;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+    justify-content: center;
+    padding-bottom: 30px;
+    margin-bottom: 10px;
+    border-bottom: 1px solid lightgray;
+}
+.option-nav{
+    width: 80px;
+    background: var(--primary);
+    color: white;
+    padding: 10px;
+    margin: 0 6px;
+    margin-bottom: 10px;
+    border-radius: 4px;
+    box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+    cursor: pointer;
+    text-shadow: 2px 2px black;
+    transition: all 200ms ease-in;
+}
+.option-nav:hover{
+    transform: scale(1.1);
+}
+
 .banner{
     height: 40vh;
     animation: none;
@@ -7,5 +38,5 @@
 }
 .main .my-experience h3{
     margin-top: -23vh;
-    margin-bottom: 17vh;
+    margin-bottom: 15vh;
 }

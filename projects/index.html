@@ -45,11 +45,20 @@
             
             <!--PROYECT SECTION-->
             <div class="my-experience">
-                <h3>PROYECTS / EXPERIENCE</h3>
+                <h3>PROJECTS / EXPERIENCE</h3>
             </div>
+
+            <div id="project-nav">
+                <p category="all" class="option-nav">All</p>
+                <p category="css" class="option-nav">CSS Only</p>
+                <p category="js" class="option-nav">JavaScript</p>
+                <p category="angular" class="option-nav">Angular</p>
+                <p category="python" class="option-nav">Python</p>
+            </div>
+
             <div class="experience">
 
-                <div class="projects">
+                <div class="projects" category="js">
                     <div class="img-project left">
                         <img src="img/JobListings.png" alt="Job Listings Page">
                     </div>
@@ -66,7 +75,7 @@
                 </div>
                 <div class="clearfix"></div>
 
-                <div class="projects">
+                <div class="projects" category="js">
                     <div class="img-project right">
                         <img src="img/JavaScriptGame.png" alt="JavaScript Game">
                     </div>
@@ -83,28 +92,11 @@
                 </div>
                 <div class="clearfix"></div>
 
-                <div class="projects">
+                <div class="projects" category="js">
                     <div class="img-project left">
-                        <img src="img/AnimatedBlog.png" alt="Animated Blog">
-                    </div>
-                    <div class="info-project right">
-                        <div class="info-main-project">
-                            <h3>Animated Blog <span>2020</span></h3>
-                            <p>Project made with HTML and CSS, using Keyframes and transitions.</p>
-                            <div class="more-project">
-                                <a href="https://github.com/LuisDavidJM/ProjectBlog.git" target="_blank">GitHub</a>
-                                <a href="animated-blog/index.html" target="_blank">Visit Site</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="clearfix"></div>
-
-                <div class="projects">
-                    <div class="img-project right">
                         <img src="img/InformationBlog.png" alt="Information Blog">
                     </div>
-                    <div class="info-project left">
+                    <div class="info-project right">
                         <div class="info-main-project">
                             <h3>Information Blog <span>2022</span></h3>
                             <p>Project made with HTML, CSS and JavaScript, include SEO.</p>
@@ -117,11 +109,11 @@
                 </div>
                 <div class="clearfix"></div>
 
-                <div class="projects">
-                    <div class="img-project left">
+                <div class="projects" category="js">
+                    <div class="img-project right">
                         <img src="img/JavaScriptPage.png" alt="JavaScript Page">
                     </div>
-                    <div class="info-project right">
+                    <div class="info-project left">
                         <div class="info-main-project">
                             <h3>JavaScript Page <span>2022</span></h3>
                             <p>Project made with HTML, CSS, JavaScript and jQuery library.</p>
@@ -134,11 +126,11 @@
                 </div>
                 <div class="clearfix"></div>
 
-                <div class="projects last">
-                    <div class="img-project right">
+                <div class="projects" category="python">
+                    <div class="img-project left">
                         <img src="img/RPSGame.png" alt="Rock Paper Scissors Game">
                     </div>
-                    <div class="info-project left">
+                    <div class="info-project right">
                         <div class="info-main-project">
                             <h3>Rock Paper Scissors Game <span>2022</span></h3>
                             <p>Python Project using graphical interface with PySide2, QtDesigner and TCP multiThreading.</p>
@@ -151,7 +143,24 @@
                 </div>
                 <div class="clearfix"></div>
 
-                <div class="projects">
+                <div class="projects" category="css">
+                    <div class="img-project right">
+                        <img src="img/AnimatedBlog.png" alt="Animated Blog">
+                    </div>
+                    <div class="info-project left">
+                        <div class="info-main-project">
+                            <h3>Animated Blog <span>2020</span></h3>
+                            <p>Project made with HTML and CSS, using Keyframes and transitions.</p>
+                            <div class="more-project">
+                                <a href="https://github.com/LuisDavidJM/ProjectBlog.git" target="_blank">GitHub</a>
+                                <a href="animated-blog/index.html" target="_blank">Visit Site</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="clearfix"></div>
+
+                <div class="projects" category="css">
                     <div class="img-project left">
                         <img src="img/NewsTemplate.png" alt="News Template">
                     </div>
@@ -168,7 +177,7 @@
                 </div>
                 <div class="clearfix"></div>
 
-                <div class="projects">
+                <div class="projects" category="css">
                     <div class="img-project right">
                         <img src="img/BootstrapTemplate.png" alt="Bootstrap Template">
                     </div>
@@ -185,7 +194,7 @@
                 </div>
                 <div class="clearfix"></div>
 
-                <div class="projects">
+                <div class="projects" category="css">
                     <div class="img-project left">
                         <img src="img/ImageGallery.png" alt="Image Gallery">
                     </div>
@@ -202,7 +211,7 @@
                 </div>
                 <div class="clearfix"></div>
 
-                <div class="projects">
+                <div class="projects" category="css">
                     <div class="img-project right">
                         <img src="img/Servicestemplate.png" alt="Services Template">
                     </div>
@@ -219,7 +228,7 @@
                 </div>
                 <div class="clearfix"></div>
 
-                <div class="projects">
+                <div class="projects" category="css">
                     <div class="img-project left">
                         <img src="img/PortfolioTemplate.png" alt="Portfolio Template">
                     </div>
@@ -236,7 +245,7 @@
                 </div>
                 <div class="clearfix"></div>
 
-                <div class="projects">
+                <div class="projects" category="">
                     <div class="img-project right">
                         <img src="img/EngineeringBlog.png" alt="Engineering blog">
                     </div>
@@ -253,7 +262,7 @@
                 </div>
                 <div class="clearfix"></div>
 
-                <div class="projects">
+                <div class="projects" category="python">
                     <div class="img-project left">
                         <img src="img/ResistorCalculator.png" alt="Resistor Calculator">
                     </div>
@@ -270,7 +279,7 @@
                 </div>
                 <div class="clearfix"></div>
 
-                <div class="projects">
+                <div class="projects" category="css">
                     <div class="img-project right">
                         <img src="img/AnimationExample.png" alt="Animation Example">
                     </div>
