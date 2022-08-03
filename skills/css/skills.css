@@ -95,3 +95,43 @@
     padding-left: 20px;
     padding-bottom: 25px;
   }
+
+  /* Popup diploma section*/
+  .diploma{
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    transform: scale(0);
+    display: none;
+    transition: all 1000ms ease;
+  }
+  .img-diploma{
+    width: 800px;
+  }
+  .img-diploma img{
+    width: 100%;
+    height: auto;
+  }
+  .img-diploma p{
+    
+    padding-right: 15px;
+    position: absolute;
+    color: white;
+    font-size: 40px;
+    padding-left: 15px;
+    padding-bottom: 9px;
+    background: rgba(0,0,0,.8);
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 200ms ease-in;
+  }
+  .img-diploma p:hover{
+    background: rgba(255,255,255,.8);
+    color: black;
+  }
+

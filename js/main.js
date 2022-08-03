@@ -1,7 +1,7 @@
 'use strict'
 
-//Navbar projects selection
 $(document).ready(function(){
+    //Navbar projects selection
 	$('#project-nav .option-nav[category="all"]').addClass('active');
 
 	$('.option-nav').click(function(){
@@ -13,11 +13,23 @@ $(document).ready(function(){
 		//Show the category projects
 		$('.projects[category="'+catProject+'"]').show();
 	});
-
     //Show all projects
 	$('.option-nav[category="all"]').click(function(){
 		$('.projects').show();
 	});
+
+    //Certifications selection
+    $('.certification').click(function(){
+        var catDiploma = $(this).attr('category');
+        console.log(catDiploma);
+        $('.diploma[category="'+catDiploma+'"]').show('fast');
+        $('.diploma[category="'+catDiploma+'"]').css('display', 'flex');
+        $('.diploma[category="'+catDiploma+'"]').css('transform', 'scale(1)');
+    });
+    $('.img-diploma p').click(function(){
+        $('.diploma').hide('slow');
+        $('.diploma').css('transform', 'scale(0)');
+    });
 });
 
 //Drop down menu section
