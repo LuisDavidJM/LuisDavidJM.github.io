@@ -42,7 +42,9 @@ menu.addEventListener("click", function () {
 
 //Up button and header section
 var up = document.getElementById('up-button');
-up.addEventListener('click', upSide);
+if(up != null){
+    up.addEventListener('click', upSide);
+}
 
 function upSide() {
     var topScroll = document.documentElement.scrollTop;
@@ -75,7 +77,8 @@ function downSide() {
 
 //Form and footer section
 var form = $('#form-contact');
-form.html('<form id="contact-form" action="" method="POST">' +
+if(form != null){
+    form.html('<form id="contact-form" action="" method="POST">' +
     '<div class="grid-form">' +
     '<div class="form-name">' +
     '<label for="name">Name</label>' +
@@ -94,6 +97,7 @@ form.html('<form id="contact-form" action="" method="POST">' +
     '<input type="submit" class="submit" value="SEND">' +
     '</div>' +
     '</form>');
+}
 
 var footer = $('#footer-js');
 footer.html('<footer class="footer">' +
@@ -106,32 +110,38 @@ footer.html('<footer class="footer">' +
 //Form action
 var form_submit = document.getElementById('contact-form');
 
-form_submit.addEventListener('submit', function (event) {
-    event.preventDefault();
-
-    const serviceID = 'default_service';
-    const templateID = 'template_s72fxza';
-
-    emailjs.sendForm(serviceID, templateID, this)
-        .then(() => {
-            form_submit.reset();
-            alert('THE MESSAGE WAS SENT!!');
-        }, (err) => {
-            alert(JSON.stringify(err));
-        });
-});
+if(form_submit != null){
+    form_submit.addEventListener('submit', function (event) {
+        event.preventDefault();
+    
+        const serviceID = 'default_service';
+        const templateID = 'template_s72fxza';
+    
+        emailjs.sendForm(serviceID, templateID, this)
+            .then(() => {
+                form_submit.reset();
+                alert('THE MESSAGE WAS SENT!!');
+            }, (err) => {
+                alert(JSON.stringify(err));
+            });
+    });
+}
 
 //Email show section
 var main_contain = document.querySelector('.main-contain');
 var main_email = document.querySelector('.main-email');
 if(main_contain != null){
     main_contain.addEventListener('mouseover', function () {
-        main_email.style.transform = 'scale(1)';
-        main_email.style.transition = 'all 700ms ease';
-        main_email.innerHTML = 'luisdavidjma@gmail.com'
+        if(main_email != null){
+            main_email.style.transform = 'scale(1)';
+            main_email.style.transition = 'all 700ms ease';
+            main_email.innerHTML = 'luisdavidjma@gmail.com';
+        }
     });
     main_contain.addEventListener('mouseout', function () {
-        main_email.style.transform = 'scale(0)';
-        main_email.style.transition = 'all 4000ms ease';
+        if(main_email != null){
+            main_email.style.transform = 'scale(0)';
+            main_email.style.transition = 'all 4000ms ease';
+        }
     });
 }
