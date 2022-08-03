@@ -112,13 +112,14 @@ form_submit.addEventListener('submit', function (event) {
 //Email show section
 var main_contain = document.querySelector('.main-contain');
 var main_email = document.querySelector('.main-email');
-
-main_contain.addEventListener('mouseover', function () {
-    main_email.style.transform = 'scale(1)';
-    main_email.style.transition = 'all 700ms ease';
-    main_email.innerHTML = 'luisdavidjma@gmail.com'
-});
-main_contain.addEventListener('mouseout', function () {
-    main_email.style.transform = 'scale(0)';
-    main_email.style.transition = 'all 4000ms ease';
-});
+if(main_contain != null){
+    main_contain.addEventListener('mouseover', function () {
+        main_email.style.transform = 'scale(1)';
+        main_email.style.transition = 'all 700ms ease';
+        main_email.innerHTML = 'luisdavidjma@gmail.com'
+    });
+    main_contain.addEventListener('mouseout', function () {
+        main_email.style.transform = 'scale(0)';
+        main_email.style.transition = 'all 4000ms ease';
+    });
+}
