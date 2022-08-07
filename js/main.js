@@ -1,5 +1,40 @@
 'use strict'
 
+//Scroll Reveal
+window.sr = ScrollReveal();
+sr.reveal(".about-me",{
+    duration: 700,
+    distance: '50%',
+    reset: true
+});
+sr.reveal(".card",{
+    duration: 700,
+    distance: '50%',
+    reset: true
+});
+sr.reveal(".left",{
+    origin: 'left',
+    duration: 700,
+    distance: '50%',
+    reset: true
+});
+sr.reveal(".right",{
+    origin: 'right',
+    duration: 700,
+    distance: '50%',
+    reset: true
+});
+sr.reveal(".certification",{
+    duration: 700,
+    distance: '50%',
+    reset: true
+});
+sr.reveal(".contact-section",{
+    duration: 1000,
+    distance: '100%',
+    reset: true
+});
+
 $(document).ready(function(){
     //Navbar projects selection
 	$('#project-nav .option-nav[category="all"]').addClass('active');
