@@ -12,13 +12,13 @@ sr.reveal(".card",{
     distance: '50%',
     reset: true
 });
-sr.reveal(".left",{
+sr.reveal(".index .left",{
     origin: 'left',
     duration: 700,
     distance: '50%',
     reset: true
 });
-sr.reveal(".right",{
+sr.reveal(".index .right",{
     origin: 'right',
     duration: 700,
     distance: '50%',
