@@ -4,35 +4,25 @@
 window.sr = ScrollReveal();
 sr.reveal(".about-me",{
     duration: 700,
-    distance: '50%',
-    reset: true
+    distance: '50%'
 });
 sr.reveal(".card",{
     duration: 700,
-    distance: '50%',
-    reset: true
+    distance: '50%'
 });
 sr.reveal(".index .left",{
     origin: 'left',
     duration: 700,
-    distance: '50%',
-    reset: true
+    distance: '50%'
 });
 sr.reveal(".index .right",{
     origin: 'right',
     duration: 700,
-    distance: '50%',
-    reset: true
+    distance: '50%'
 });
 sr.reveal(".certification",{
     duration: 700,
-    distance: '50%',
-    reset: true
-});
-sr.reveal(".contact-section",{
-    duration: 1000,
-    distance: '100%',
-    reset: true
+    distance: '50%'
 });
 
 $(document).ready(function(){
