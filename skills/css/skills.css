@@ -54,8 +54,7 @@
   }
   .certification{
     cursor: pointer;
-    flex-basis: 320px;
-    flex-grow: 1;
+    flex-basis: 300px;
     margin-bottom: 25px;
     margin-right: 20px;
     margin-left: 20px;
